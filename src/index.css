@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Zeyada&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", serif;
+  --font-hand: "Gaegu", cursive;
+  --font-body: "Inter", sans-serif;
+  
+  --color-brown-50: #fdfaf7;
+  --color-brown-100: #f7ede2;
+  --color-brown-200: #eaddcf;
+  --color-brown-400: #b99d85;
+  --color-brown-500: #9c8470;
+  --color-brown-600: #7d6552;
+  --color-brown-700: #624e40;
+  --color-brown-800: #4a3a30;
+  --color-brown-900: #2d241d;
+  
+  --color-cream-50: #fffefb;
+  --color-cream-100: #fff9f2;
+}
+
+@layer base {
+  body {
+    @apply font-body bg-cream-100;
+    cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%23ffb8b8' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' /%3E%3C/svg%3E"), auto;
+  }
+  
+  h1, h2, h3 {
+    @apply font-serif;
+  }
+}
+
+.cursor-heart {
+  cursor: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='32' height='32' viewBox='0 0 24 24' fill='%23ffb8b8' stroke='%23ffffff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z' /%3E%3C/svg%3E"), pointer;
+}
+
+/* Custom animation for watercolor feel */
+.watercolor-blur {
+  filter: url(#watercolor);
+}
+
